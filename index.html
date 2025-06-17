@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>C3の参加費について</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #74b9ff, #a29bfe);
+      color: #fff;
+      opacity: 0;
+      transition: opacity 2s ease;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    a.download-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #00cec9;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 8px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    a.download-btn:hover {
+      background: #0984e3;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>C3の参加費について</h1>
+    <p>以下のボタンからPDFファイルをダウンロードしてください。</p>
+    <a class="download-btn" href="information.pdf" download>PDFをダウンロード</a>
+  </div>
+
+  <script>
+    // ページロード時にフェードイン
+    window.addEventListener('load', function() {
+      document.body.style.opacity = 1;
+    });
+  </script>
+
+</body>
+</html>
